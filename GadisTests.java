@@ -1,4 +1,17 @@
-//Adapted from the tests previously posted on piazza:
+import static org.junit.Assert.*;
+
+import java.io.ByteArrayInputStream;
+import java.io.IOException;
+import java.io.InputStream;
+import java.net.URI;
+import java.net.URISyntaxException;
+import org.junit.Test;
+import edu.yu.cs.com1320.project.impl.HashTableImpl;
+import edu.yu.cs.com1320.project.HashTable;
+import edu.yu.cs.com1320.project.stage1.impl.*;
+import edu.yu.cs.com1320.project.stage1.*;
+public class GadisTest {
+    //Adapted from the tests previously posted on piazza:
 @Test
 public void testPutNullDeletion() throws IOException {
     DocumentStore documentStore = new DocumentStoreImpl();
@@ -100,4 +113,6 @@ public void testCollisionPutValues() throws IOException {
     assertEquals(putBINARY2Collision,test2);
     assertEquals(putTXT1Collision,test3);
     assertEquals(putTXT2Collision,test4);
+}
+    
 }
